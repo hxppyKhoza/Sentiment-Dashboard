@@ -37,9 +37,9 @@ This dashboard lets you:
 
 ## 🖥️ Local Setup
 
-### 1️⃣ Install dependencies
+### Instructions: 
 ```bash
-pip install -r requirements.txt
+1️⃣ pip install -r requirements.txt
 
 2️⃣ Add your API key
 
