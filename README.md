@@ -1,66 +1,42 @@
-# Sentiment-Dashboard
+# 🧠 Sentiment Analysis Dashboard
 
-A simple Streamlit app that analyzes text sentiment using OpenAI.
-Supports single text input, batch analysis, file uploads, and visual charts.
+A lightweight **AI-powered sentiment analysis** app built with **Python** and **Streamlit**.
 
-✨ Features
+This dashboard lets you:
+- Analyze the sentiment of text 🎯  
+- Extract keywords 🏷️  
+- View confidence scores 📊  
+- Run batch text analysis  
+- Upload files for automatic processing  
 
-Sentiment detection (Positive / Neutral / Negative)
+---
 
-Confidence score
+## 🚀 Features
 
-Keyword extraction
+✅ Single text sentiment analysis  
+✅ Batch processing for multiple inputs  
+✅ File uploads: `.txt`, `.csv`, `.json`, `.pdf`  
+✅ Sentiment gauge visualization  
+✅ Confidence score charts  
+✅ Keyword frequency bar chart  
+✅ Results export (CSV / JSON)
 
-AI explanation
+---
 
-Batch analysis
+## 🧠 Technologies Used
 
-Upload .txt, .csv, .json, .pdf files
+| Component | Library |
+|----------|---------|
+| Web UI | Streamlit |
+| AI Model | OpenAI API |
+| Charts | Plotly |
+| File Parsing | Pandas, PyPDF2 |
+| Environment Vars | python-dotenv |
 
-Charts and tables
+---
 
-Export to CSV or JSON
+## 🖥️ Local Setup
 
-🚀 Getting Started
-1. Install dependencies
+### 1️⃣ Install dependencies
+```bash
 pip install -r requirements.txt
-
-2. Add OpenAI API key
-
-Create a .env file:
-
-OPENAI_API_KEY=your_key_here
-
-3. Run the app
-streamlit run app.py
-
-📂 File Structure
-app.py        # Main application
-README.md     # Documentation
-.env          # API key (optional)
-
-📝 How It Works
-
-Enter text or upload files
-
-Click Analyze Sentiment or Run Batch Analysis
-
-View results, charts, and insights
-
-Download CSV/JSON if needed
-
-📦 Supported Files
-
-.txt
-
-.csv
-
-.json
-
-.pdf
-
-📤 Exports
-
-CSV
-
-JSON
