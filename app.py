@@ -1,17 +1,21 @@
-# app.py
 import os
 import time
 import json
 import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from collections import Counter
-from dotenv import load_dotenv
 import pandas as pd
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 
-load_dotenv() 
+# Load environment variables (only for local development)
+try:
+    from dotenv import load_dotenv
+    load_dotenv() 
+except ImportError:
+    # dotenv not available (e.g., on Streamlit Cloud), use Streamlit secrets
+    pass 
 
 # Use the modern OpenAI client pattern
 try:
